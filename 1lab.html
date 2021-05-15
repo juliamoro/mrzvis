@@ -1,0 +1,42 @@
+<!-- //////////////////////////////////////////////////////////////////////////////////////
+// Лабораторная работа 1 по дисциплине ЛОИС
+// Выполнена студентом группы 921704 - Мурашко И.А.
+// HTML - документ
+// 03.04.21
+// Алгоритм вычисления произведения пары 4-разрядных чисел 
+// умножением со старших разрядов со сдвигом множимого (частичного произведения) вправо
+// -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 1 по дисциплине MРЗвИС. Вариант 3.</title>
+    <script src="1lab.js"></script>
+</head>
+<style>
+    html {
+    height: 100%;
+   } 
+   body {
+        position: relative;
+        margin-right: 200px;
+   }
+    .wrapper {
+        padding-left: 20%;
+    }
+</style>
+    
+<body>
+    <div class="wrapper">
+        <p><b>Вариант 3: алгоритм вычисления произведения пары 4-разрядных чисел <br />умножением со старших разрядов со сдвигом множимого (частичного произведения) вправо</b></p>
+        <input id="InputPairFirstElem" placeholder="Введите первые элементы пар" size = 35/> <br>
+        <input id="InputPairSecondElem" placeholder="Введите вторые элементы пар" size = 35/> <br>
+        <input id="Time" placeholder="Введите время обработки одного этапа" size = 35/> <br>
+        <button id="Build"  onclick='main();' >Создание таблицы</button><br>
+        <button id="Reload"  onclick='location.reload();' >Очистить</button>
+        <div id="ResultMassage"></div>
+        <table id="Table" border = "1"> </table>
+    </div>
+</body>
+</html>
